@@ -8,22 +8,28 @@
   <body>
     <h1 id='title'>Self-Taught Development Resources</h1>
       <p id='description'>Thank you for taking the time to help others</p>
-      <form id="survey form">
+      <form id="survey-form">
         <fieldset>
-          <label for="name">Name <input id='name' name='name' type='text' placeholder="Enter name" required></label>
-          <label for="email">Email <input id='email' name='email' type='email' placeholder="Enter email" required></label>
-          <label for="number">Age you began study (optional) <input id='number' name='age' type='number' placeholder="Enter age" min="1" max="120" ></label>
-          <label for="current role">Which option best describes your current role?<select id="dropdown" name="current role">
+          <label id="name-label">Name</label> 
+          <input id='name' name='name' type='text' placeholder="Enter name" required>
+          <label id="email-label">Email</label> 
+          <input id='email' name='email' type='email' placeholder="Enter email" required>
+          <label id="number-label">Age you began study (optional)</label> 
+          <input id='number' name='age' type='number' placeholder="Enter age" min="1" max="120" >
+          <label id="current role">Which option best describes your current role?</label>
+          <select id="dropdown" name="current role">
             <option value=" ">(select one)</option>
             <option value="1">Still Learning</option>
             <option value="2">Job Search</option>
             <option value="3">Junior Developer</option>
             <option value="4">Senior Developer</option>
           </select></label>
+        </fieldset>
           <label for="recommendation">Would you recommend self-study over formal education? 
-            <label>Yes <input id='yes' type="radio" name="recommendation" class="inline"></label>
-            <label>No <input id='no' type="radio" name="recommendation" class="inline"></label>
+            <label>Yes <input id='yes' type="radio" name="recommendation" value="1" class="inline"></label>
+            <label>No <input id='no' type="radio" name="recommendation" value="2" class="inline"></label>
           </label>
+        <fieldset>
           <label for="hours of study">How many hours a week of study would you recommend? <select id='dropdown' name="hours of study">
             <option value=" ">(select one)</option>
             <option value="1">1-9hrs</option>
@@ -31,20 +37,21 @@
             <option value="3">20-29hrs</option>
             <option value="4">30+hrs</option>
           </select></label>
-          <label for="resources">Which resources did you use? (Check all that apply)  
-            <input type="checkbox" id="freeCodeCamp" name="freeCodeCamp" value="freeCodeCamp">
-            <label for="freeCodeCamp"> freeCodeCamp</label><br>
-            <input type="checkbox" id="Code Academy" name="Code Academy" value="Code Academy">
-            <label for="Code Academy"> Code Academy</label><br>
-            <input type="checkbox" id="Udemy" name="Udemy" value="Udemy">
+        </fieldeset>
+        <fieldset>
+          <label for="resources">Which resources did you use? (Check all that apply)</label>
+            <label for="freeCodeCamp"> freeCodeCamp</label>
+            <input type="checkbox" id="freeCodeCamp" name="freeCodeCamp" value="freeCodeCamp" class="inline">
+            <label for="code academy">Code Academy</label>
+            <input type="checkbox" id="Code Academy" name="Code Academy" value="Code Academy" class="inline">
             <label for="Udemy"> Udemy</label>
-            <input type="checkbox" id="The Odin Project" name="The Odin Project" value="The Odin Project">
-            <label for="The Odin Project"> The Odin Project</label><br>
-            <input type="checkbox" id="MOOC" name="MOOC" value="MOOC">
-            <label for="MOOC"> MOOC (i.e. Harvard CS50 or University of Helinski courses)</label><br>
-            <input type="checkbox" id="Youtube" name="Youtube" value="Youtube">
+            <input type="checkbox" id="Udemy" name="Udemy" value="Udemy" class="inline">
+            <label for="The Odin Project"> The Odin Project</label>
+            <input type="checkbox" id="The Odin Project" name="The Odin Project" value="The Odin Project" class="inline">
+            <label for="MOOC"> MOOC (i.e. Harvard CS50 or University of Helinski courses)</label>
+            <input type="checkbox" id="MOOC" name="MOOC" value="MOOC" class="inline">
             <label for="Youtube"> Youtube</label>
-          </label>
+            <input type="checkbox" id="Youtube" name="Youtube" value="Youtube" class="inline">
           <label for="comments">Comments or Suggestions <textarea id='comments' name='comments' rows="5" cols="30" placeholder="I'd suggest starting with..."></textarea></label>
         </fieldset>
         <input type="submit" id="submit" name="submit" value="Submit"></button></label>
